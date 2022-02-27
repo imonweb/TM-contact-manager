@@ -8,7 +8,7 @@ function App() {
  
   return (
     <div className="App">
-      <Header branding="Contact Manager" />
+      <Header  />
       <Contact name="John Doe" email="jdoe@gmail.com" phone="555-555-555" />
       <Contact name="Ash Doe" email="adoe@gmail.com" phone="222-222-222" />
       
