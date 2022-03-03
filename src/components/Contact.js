@@ -2,6 +2,22 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 class Contact extends Component {
+  state = {};
+
+   
+
+  // constructor() {
+  //   super();
+  //   this.state = {};
+
+  //   this.onShowClick = this.onShowClick.bind(this);
+  // }
+
+
+
+  onShowClick = (name, e) => {
+    console.log(name);
+  }
 
   // static propType = {
   //   name: PropTypes.string.isRequired,
@@ -15,7 +31,7 @@ class Contact extends Component {
     } = this.props.contact;
     return (
       <div className="card card-body mb-3">
-        <h4>{ name}</h4>
+        <h4>{ name }<i onClick={this.onShowClick.bind(this,name) } className="fas fa-sort-down"></i> </h4>
         <ul className="list-group">
           <li className="list-group-item">Email: { email}</li>
           <li className="list-group-item">Phone: { phone}</li>
